@@ -112,6 +112,16 @@ $$
 f(z) = z^2 + 0.30 + i \cdot 0.11
 $$
 
+
+![Screenshot 2024-10-27 3 41 11 PM](https://github.com/user-attachments/assets/95367133-2623-4056-aacd-d1be9852e2d3)
+
+##### **MY EYES**
+
+$$
+f(z) = z^2 - 0.65 + i \cdot 0.38
+$$
+
+
 </div>
 
 
