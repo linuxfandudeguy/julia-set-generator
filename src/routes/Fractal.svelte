@@ -62,21 +62,22 @@
 </div>
 
 <style>
-  button {
+button {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-  }
+}
 
-  canvas {
+canvas {
     margin-top: 1rem;
-  }
+    border: none; /* Remove border from canvas */
+}
 
-  .equation {
+.equation {
     margin-top: 1rem;
-    color: #FFFFFF;
-  }
+    color: #000000;
+}
 
-     body {
-            background-color: white;
-        }
+body {
+    background-color: white;
+}
 </style>
