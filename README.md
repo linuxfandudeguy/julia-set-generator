@@ -70,7 +70,7 @@ onMount(() => {
 });
 ```
 ##  Examples
-This is a list of fractals and the equations corresponding to them (And my nickname of it).
+This is a list of fractals and the equations corresponding to them. (and my nickname of it)
 
 <div align=center>
 
@@ -82,6 +82,16 @@ This is a list of fractals and the equations corresponding to them (And my nickn
 
 $$
 f(z) = z^2 - 0.06 + i \cdot 0.77
+$$
+
+
+
+![Screenshot 2024-10-27 3 31 47 PM](https://github.com/user-attachments/assets/dfc0af09-e773-4e9b-a87f-ab1acf5804c3)
+
+##### Rainbow Swirl
+
+$$
+f(z) = z^2 - 0.46 + i \cdot 0.58
 $$
 </div>
 
