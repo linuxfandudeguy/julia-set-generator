@@ -104,6 +104,14 @@ $$
 f(z) = z^2 - 0.31 + i \cdot 0.05
 $$
 
+![download (1)](https://github.com/user-attachments/assets/a41d28fa-c42b-4ca0-a655-b1f84b8a8293)
+
+##### Wavy
+
+$$
+f(z) = z^2 + 0.30 + i \cdot 0.11
+$$
+
 </div>
 
 
