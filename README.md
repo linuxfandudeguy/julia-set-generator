@@ -1,19 +1,64 @@
-# create-svelte
+# julia-set-generator
+ 
+A random Julia set generator, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## How it works
+```svelte
+  <script>
+import { onMount } from 'svelte';
+  let canvas;
+  let zoom = 1; // Initial zoom level
+  let maxIterations, cx, cy;
+  let equation = ''; // Variable to hold the equation
 
-## Creating a project
+  const setRandomValues = () => {
+    maxIterations = Math.floor(Math.random() * 100) + 150; // Max iterations between 150 and 250
+    cx = Math.random() * 2 - 1;                    // Constant cx between -1 and 1
+    cy = Math.random() * 2 - 1;                    // Constant cy between -1 and 1
+  };
 
-If you're seeing this, you've probably already done this step. Congrats!
+  const drawFractal = () => {
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    ctx.clearRect(0, 0, width, height);
 
-```bash
-# create a new project in the current directory
-npx sv create
+    // Generate new random parameters for each fractal
+    setRandomValues();
+    equation = `f(z) = z^2 + ${cx.toFixed(2)} + i * ${cy.toFixed(2)}`; // Update equation display
 
-# create a new project in my-app
-npx sv create my-app
+    for (let x = 0; x < width; x++) {
+      for (let y = 0; y < height; y++) {
+        let zx = (x - width / 2) / (zoom * 100);
+        let zy = (y - height / 2) / (zoom * 100);
+        let iter = 0;
+
+        while (zx * zx + zy * zy < 4 && iter < maxIterations) {
+          let tmp = zx * zx - zy * zy + cx;
+          zy = 2.0 * zx * zy + cy;
+          zx = tmp;
+          iter++;
+        }
+
+        // Color mapping based on iteration count
+        let color;
+        if (iter === maxIterations) {
+          color = 'rgb(0, 0, 0)'; // Inside the set (black)
+        } else {
+          const hue = Math.floor(360 * (iter / maxIterations));
+          color = `hsl(${hue}, 100%, 50%)`; // Bright colors in HSL
+        }
+        ctx.fillStyle = color;
+        ctx.fillRect(x, y, 1, 1);
+      }
+    }
+  };
+
+  onMount(() => {
+    drawFractal();
+  });
+</script>
 ```
-
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
