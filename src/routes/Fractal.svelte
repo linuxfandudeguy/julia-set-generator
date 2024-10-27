@@ -75,4 +75,8 @@
     margin-top: 1rem;
     color: #FFFFFF;
   }
+
+     body {
+            background-color: white;
+        }
 </style>
