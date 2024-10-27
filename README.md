@@ -104,7 +104,7 @@ $$
 f(z) = z^2 - 0.31 + i \cdot 0.05
 $$
 
-![download (1)](https://github.com/user-attachments/assets/a41d28fa-c42b-4ca0-a655-b1f84b8a8293)
+![download (2)](https://github.com/user-attachments/assets/0c723431-eb01-40c5-b985-098e9cbba6ca)
 
 ##### Wavy
 
