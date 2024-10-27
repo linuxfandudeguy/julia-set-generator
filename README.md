@@ -129,3 +129,4 @@ $$
 
 To create a copy version of my app:
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/linuxfandudeguy/julia-set-generator)
