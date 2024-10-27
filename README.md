@@ -71,6 +71,7 @@ onMount(() => {
 ```
 ##  Examples
 <div align=center>
+
 ![Screenshot 2024-10-27 3 29 09 PM](https://github.com/user-attachments/assets/5995c346-262c-423f-a256-7a29a8f9360d)
 
 $$
