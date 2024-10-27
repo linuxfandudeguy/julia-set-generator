@@ -6,10 +6,6 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: white; /* Set body background to white */
-    color: black;            /* Set default text color to black */
-}
-
-h1, h2, h3, h4, h5, h6, p, span, a {
-    color: inherit; /* Inherit color from the body */
+    background-color: white !important; /* Set body background to white */
+    color: black !important;            /* Set default text color to black */
 }
