@@ -69,16 +69,14 @@ onMount(() => {
   drawFractal(); // Call the function to draw the fractal
 });
 ```
-## Developing
+##  Examples
+![Screenshot 2024-10-27 3 29 09 PM](https://github.com/user-attachments/assets/5995c346-262c-423f-a256-7a29a8f9360d)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+$$
+f(z) = z^2 - 0.06 + i \cdot 0.77
+$$
 
-```bash
-npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
 
 ## Building
 
