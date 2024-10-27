@@ -88,11 +88,22 @@ $$
 
 ![Screenshot 2024-10-27 3 31 47 PM](https://github.com/user-attachments/assets/dfc0af09-e773-4e9b-a87f-ab1acf5804c3)
 
+
 ##### Rainbow Swirl
 
 $$
 f(z) = z^2 - 0.46 + i \cdot 0.58
 $$
+
+
+![download (1)](https://github.com/user-attachments/assets/45b2be31-b9a9-4e6b-894d-e147c3c5d6ac)
+
+##### Black Gem
+
+$$
+f(z) = z^2 - 0.31 + i \cdot 0.05
+$$
+
 </div>
 
 
